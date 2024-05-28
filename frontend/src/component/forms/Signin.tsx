@@ -10,7 +10,7 @@ const siginSchema = Yup.object().shape({
 
 const SigninForm = () => {
   return (
-    <div className="w-full">
+    <div className="w-full login-form">
       <h2 className="font-heading text-3xl font-semibold">Sign in</h2>
       <Formik
         initialValues={{
@@ -59,6 +59,10 @@ const SigninForm = () => {
           </Form>
         )}
       </Formik>
+      <p className="mt-4 cursor-pointer text-center">
+        Don't have an account?{" "}
+        <span className="text-primary italic">Sign up</span> Now
+      </p>
     </div>
   );
 };
