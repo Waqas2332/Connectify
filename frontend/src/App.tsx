@@ -1,3 +1,12 @@
+import { Routes, Route } from "react-router-dom";
+import GuestHome from "./pages/GuestHome";
+
 export default function App() {
-  return <div className="text-blue-900">App</div>;
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<GuestHome />} />
+      </Routes>
+    </>
+  );
 }
